@@ -1,0 +1,26 @@
+{
+  "name": "experiments-201224",
+  "version": "1.0.0",
+  "description": "Just some arbitrary experiments to collect data, evaluate and make decisions.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "test": "vitest --silent",
+    "watch": "tsc --watch",
+    "nodemon:watch": "nodemon --watch dist dist/index.js",
+    "dev": "concurrently \"npm run watch\" \"npm run nodemon:watch\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "node-cache": "^5.1.2",
+    "uuid": "^11.0.3"
+  }
+}
